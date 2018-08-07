@@ -274,12 +274,13 @@ img {
     .container3 {
       padding-top: 10px;
     }
-
+}
 
 /* =====================
   Media Query for 1024px
 ======================== */
   @media (min-width: 1024px) {
+
     .wrap {
       min-height: calc(100vh - 100px);
     }
