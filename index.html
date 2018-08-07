@@ -1,97 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Ricardo's Portfolio Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-
-    <header class="main-header">
-      <div id="top">
-        <h1 class="student-name">Ricardo Garcia</h1>
+   <div class="wrap">
+    <header class="main-header" id="top">
+      <div class="container clearfix">
+       <h1 class="name">Ricardo Garcia</h1>
         <nav class="main-nav">
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
+            <a href="#">HOME</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
         </nav>
       </div>
-
-      <div class="">
-        <img class="profile-img"src="images/responsive-layout-profile.png" alt="a profile picture">
-        <p>Hi! I'm a front-end developer student who is learning responsive design
+      <div class="container2 clearfix">
+        <img class="profile-img" src="images/responsive-layout-profile.png" alt="a profile picture">
+        <p class="intro">Hi! I'm a front-end developer student who is learning responsive design
         in css. This is my second techdegree project in front-end development at Treehouse.</p>
       </div>
     </header>
 
-    <main class="main-content">
-      <h2 class="title">PORTFOLIO</h2>
-
-      <div class"first unit">
-        <img src="images/portfolio-1.png" alt="marketing image">
-        <h2>Marketing Page</h2>
-        <p>This project shows the front page of a marketing website meant for
-        a specific business I'm interested in.</p>
-      </div>
-
-      <div class"second unit">
+  <main class="main-content">
+      <h2 id="portfolio">PORTFOLIO</h2>
+        <div class="first unit">
+          <img src="images/portfolio-1.png" alt="marketing image">
+          <h2>Marketing Page</h2>
+          <p>This project shows the front page of a marketing website meant for
+          a specific business I'm interested in.</p>
+        </div>
+       <div class="second unit">
         <img src="images/portfolio-2.png" alt="search image">
         <h2>Search Page</h2>
         <p>This project searches through a specific database to find information
           that the user is trying to look up.</p>
-      </div>
+       </div>
 
-      <div class"third unit">
+       <div class="third unit">
         <img src="images/portfolio-3.png" alt="travel image">
         <h2>Travel App</h2>
         <p>This project compares travel times based on different transportation
           methods and tells you the best one.</p>
-      </div>
+       </div>
 
-      <div class"fourth unit">
+       <div class="fourth unit">
         <img src="images/portfolio-4.png" alt="marketing image">
         <h2>Map of Favorite Spots</h2>
         <p>This project uses mapping apis to plot points for my favorite
         spots in the city for a do-it-yourself walking tour.</p>
-      </div>
+       </div>
 
-      <div class"fifth unit">
+       <div class="fifth unit">
         <img src="images/portfolio-5.png" alt="photo gallery image">
         <h2>Photo Gallery</h2>
         <p>This project shows pictures from a recent trip to the viewer and
         allows them to easily navigate through photos.</p>
-      </div>
+       </div>
 
-      <div class"sixth unit">
+       <div class="sixth unit">
         <img src="images/portfolio-6.png" alt="calculator image">
-        <h2>Marketing Page</h2>
+        <h2>Calculator</h2>
         <p>Someone can enter in the numbers they want, and press the big blue
         button and get the result.</p>
+       </div>
+  </main>
+
+      <div class="contInfo">
+        <div class="contact">
+         <h3 id="contact">CONTACT</h3>
+          <p>If you are interested in chatting or want more inforation about
+          what I have been learning feel free to contact me.</p>
+          <p>Phone 760-975-1032</p>
+          <p>Email:
+            <a href="mailto:ricardogb011@gmail.com?subject=Hi%20there!">ricardogb011@gmail.com</a>
+          </p>
+         </div>
+       </div>
+     </div>
+
+    <footer class="main-footer clearfix">
+      <div class="container3">
+        <h3 class="footer-name">Ricardo Garcia</h3>
+         <nav class="footer-nav">
+           <a class="toTop" href="#top">BACK TO TOP</a>
+           <a class="callout" href="#">HOME</a>
+           <a class="callout" href="#portfolio">PORTFOLIO</a>
+           <a class="callout" href="#contact">CONTACT</a>
+         </nav>
       </div>
-
-      <div>
-        <p>If you are interested in chatting or want more inforation about
-        what I have been learning feel free to contact me.</p>
-
-      </div>
-    </main>
-
-    <footer class="main-footer">
-      <h3>Ricardo Garcia</h3>
-      <h3><a href="#top">BACK TO TOP</a></h3>
-      <nav class="main-nav">
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
-
-
     </footer>
-
   </body>
 </html>

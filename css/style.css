@@ -1,0 +1,345 @@
+/* Base Styles  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  background-color: #F0F8FF;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.footer-name {
+  font-family: 'Petit Formal Script', cursive;
+}
+
+.main-nav li a:active {
+  background: #F0F8FF;
+}
+
+.main-header,
+.main-content {
+  background-color: white;
+}
+
+.footer-name,
+.footer-nav a {
+  color: black;
+}
+
+/* ============
+    Layout
+=============== */
+
+.main-header {
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+}
+
+#portfolio {
+  padding: 40px 0;
+  font-weight: bold;
+}
+
+#contact {
+  padding: 40px 0 20px;
+}
+
+.container,
+.container2 {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.main-content {
+  width: 100%;
+  border-top: 3px solid #F0F8FF;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  padding-bottom: 60px;
+}
+
+/* Navigation & Main */
+
+.name {
+  font-size: 1.45em;
+}
+
+.name,
+.main-nav a {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.main-nav {
+  padding-bottom: 25px;
+}
+
+.main-nav,
+.footer-nav {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.footer-nav,
+.main-nav a {
+  font-size: 1em;
+}
+
+.name,
+.main-nav a {
+  display: block;
+  padding: 10px 15px;
+}
+
+
+.profile-img {
+  margin-top: 20px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.contInfo {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.container2 {
+  padding-top: 10px;
+}
+
+/* ==========
+    Footer
+============= */
+
+.main-footer {
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: #F0F8FF;
+}
+
+.footer-name {
+  float: left;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.footer-nav a {
+  float: right;
+  padding: 20px 0;
+}
+
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.container3 {
+  border-top: 1px solid black;
+}
+
+.callout {
+  display: none;
+}
+
+
+/* ==================
+   Media Queries
+  ===================  */
+
+@media (min-width: 768px) {
+
+  .wrap {
+    min-height: calc(100vh - 100px);
+  }
+
+  .contInfo,
+  .main-content,
+  .container3 {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+
+  .name,
+  .main-nav a {
+     display: inline-block;
+   }
+
+  .main-nav a {
+    margin-left: 30px;
+    padding: 10px 15px;
+  }
+
+  .footer-nav a:hover,
+  .main-nav a:hover {
+    border-bottom: 1px solid blue;
+  }
+
+
+  .name {
+    width: 250px;
+  }
+
+  .intro {
+      padding-left: 1.2em;
+      text-align: left;
+    }
+
+   .unit {
+     display: inline-block;
+     width: 50%;
+     margin-right: -4px;
+     padding-left: 1em;
+     padding-right: 1em;
+     vertical-align: top;
+   }
+
+    .profile-img {
+      float: right;
+      margin-bottom: 20px;
+      margin-left: 5px;
+      width: 375px;
+      padding-right: 1em;
+    }
+
+    .clearfix::after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+
+    .contInfo {
+      background-color: #F0F8FF;
+      padding-bottom: 40px;
+    }
+
+    .contact {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .footer-name {
+      float: left;
+      margin: 0;
+      padding-top: 15px;
+    }
+
+    .footer-nav {
+      float: right;
+      margin-top: 0;
+      padding-bottom: 40px;
+    }
+
+    .footer-nav a {
+      float: left;
+      margin-left: 15px;
+      padding: 10px 15px;
+    }
+
+    .callout {
+      display: inline-block;
+    }
+
+    .toTop {
+      display: none;
+    }
+
+    .container3 {
+      padding-top: 10px;
+    }
+
+
+/* =====================
+  Media Query for 1024px
+======================== */
+  @media (min-width: 1024px) {
+    .wrap {
+      min-height: calc(100vh - 100px);
+    }
+
+    .main-header,
+    .main-content,
+    .container3  {
+      width: 100%;
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+
+
+    .main-header,
+    .main-content {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+
+    .name {
+      float: left;
+      margin-left: -5px;
+      text-align: left;
+      padding-right: 0;
+    }
+
+    .main-nav {
+      float: right;
+    }
+
+    .main-nav a {
+      margin-left: 15px;
+    }
+
+    .profile-img {
+      float: right;
+      margin-bottom: 40px;
+      margin-left: 15px;
+      width: 425px;
+    }
+
+    .unit {
+      display: inline-block;
+      margin-right: -4px;
+      padding-left: 1em;
+      padding-right: 1em;
+      vertical-align: top;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth {
+      width: 33%;
+    }
+
+    .contact {
+      width: 50%;
+      margin: 0 auto;
+    }
+}
